@@ -5,15 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome To Darus Sunnah</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<!-- fontaweosome kits  -->
+    <!-- fontaweosome kits  -->
     <script src="https://kit.fontawesome.com/29cfc7711b.js" crossorigin="anonymous"></script>
 
+    <!-- Meta Pixel Code -->
+        <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '822788638341729');
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=822788638341729&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- domain verification start  -->
+    <meta name="facebook-domain-verification" content="71wm0lmchegim3kq4opf6gemvajzh3" />
+    <!-- domain verification end  -->
+
     <style>
-        .logo{
+        /* .logo{
+            
             width: 150px;
             height: 150px;
             margin: 0 auto;
-        }
+        } */
         .delivery{
             font-weight: 900;
         }
@@ -25,7 +48,7 @@
         <header>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
-                    <img src="./images/logo.png" alt="" class="img-fluid logo">
+                    <a href="/"><img src="./images/logo.png" alt="" class="img-fluid logo"></a>
                 </div>
             </div>
         </header>
@@ -58,21 +81,124 @@
     <!-- lead section started  -->
     <section class="container-fluid bg-dark mb-3">
         <div class="order-section container p-5">
-            <div class="row">
+            <div class="row d-flex">
                 <div class="col-lg-6 col-md-12 col-sm-12 text-white d-flex flex-column justify-content-center align-items-center mt-3">
                     <h1>১ কেজি ১২০০ টাকা</h1> <br>
                     <h2>ডেলিভারি চার্জ ফ্রি</h2> <br>
                 </div>
+                <!-- <div class="col-lg-6 col-md-12 col-sm-12 text-white d-flex flex-column justify-content-center align-items-center mt-3">
+                    <h1>১ কেজি ১২০০ টাকা</h1> <br>
+                    <h2>ডেলিভারি চার্জ ফ্রি</h2> <br>
+                </div>
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label for="validationDefault01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="আপনার নাম লিখুন" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationDefault02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationDefaultUsername" class="form-label">Username</label>
+                        <div class="input-group">
+                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                        <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationDefault03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault04" class="form-label">State</label>
+                        <select class="form-select" id="validationDefault04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault05" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationDefault05" required>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                            Agree to terms and conditions
+                        </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                    </form> -->
+
+
+                    <!-- modal start -->
                 <div class="col-lg-6 col-md-12 col-sm-12 text-white d-flex justify-content-center align-items-center ">
-                    <button class="border border-3 rounded-pill border-white bg-danger">
-                        <h1>
-                            <a href="https://bastob.net/cart/directorder" class="p-4 text-white text-decoration-none">
-                                অর্ডার করবো
-                            </a>
-                        </h1>
-                    </button>
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalToggleLabel" style="color: black; text-align:center">অর্ডার করতে নিচের তথ্য গুলো প্রদান করুন</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                        <form class="row g-3 m-2">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <!-- <label for="inputAddress2" class="form-label" style="color: black;">Address</label> -->
+                                <input type="text" class="form-control" id="inputFullName" placeholder="আপনার নাম লিখুন...">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <!-- <label for="inputPassword4" class="form-label" style="color: black;">ফোন নাম্বার</label> -->
+                                <input type="number" class="form-control" id="inputPassword4" placeholder="আপনার ফোন নাম্বার দিন ">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                <!-- <label for="inputState" class="form-label">আপনার ডেলিভারী এলাকা সিলেক্ট করুন...</label> -->
+                                <select id="inputState" class="form-select required">
+                                <option selected>আপনার ডেলিভারী এলাকা সিলেক্ট করুন...</option>
+                                <option>ঢাকা সিটির মাঝে হোম ডেলিভারী - ৬০ টাকা</option>
+                                <option>ঢাকা সিটির বাইরে কুরিয়ার অফিস ডেলিভারী - ১২০ টাকা</option>
+                                <option>ঢাকা সিটির বাইরে হোম ডেলিভারী - ১৫০ টাকা</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
+                                <!-- <label for="inputAddress2" class="form-label" style="color: black;">Address</label> -->
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="যে ঠিকানায় ডেলিভারী পেতে চান সেই ঠিকানা লিখুন" required="required"> 
+                            </div>
+                            <!-- <fieldset class="row mb-3" aria-required="true">
+                                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label text-black" for="gridRadios1">
+                                            First radio
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <label class="form-check-label text-black" for="gridRadios2">
+                                            Second radio
+                                            </label>
+                                        </div>
+                                    </div>
+                            </fieldset> -->
+                        </form>
+                        
+                    <div class="modal-footer col-lg-12 col-md-12 col-sm-12">
+                        <a href="./thank-you.html">
+                            <button class="btn btn-primary col-lg-12 col-md-12 col-sm-12" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" type="submit">অর্ডার সাবমিট করতে এখানে ক্লিক করুন</button>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                    <a class="btn btn-primary p-4" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><h3>অর্ডার করতে এখানে ক্লিক করুন</h3></a>
                     
                 </div>
+
+                <!-- Modal End -->
             </div>
         </div>
     </section>
@@ -84,63 +210,39 @@
             <div class="col-2"></div>
             <div class="col-lg-8 col-md-12 col-sm-12">
                 <h1 class="text-center text-white mt-3 p-2 border border-3 rounded-pill border-white mb-3">আমাদের মধুময় বাদাম ব্যবহারে আপনার</h1>
-                <div class="list-group">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning"><h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; পুরুষের যৌন অক্ষমতা ভালো করবে।</h4></li>
+                    <li class="list-group-item list-group-item-primary"><h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; ঠিকমত শক্ত না হওয়া ভালো হবে।</h4></li>
+                    <li class="list-group-item list-group-item-secondary"><h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; উত্তেজনা কম সমাধান করবে।</h4></li>
+                    <li class="list-group-item list-group-item-success"><h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; যৌন আকাঙ্ক্ষা জাগাবে।</h4></li>
+                    <li class="list-group-item list-group-item-danger"><h4><i class="fa-regular fa-hand-point-right"></i> &nbsp; লিঙ্গ উত্থিত না হওয়ার সমস্যা সমাধান করবে।</h4></li>
+                    <li class="list-group-item list-group-item-warning"><h4><i class="fa-regular fa-hand-point-right"></i> &nbsp; শারীরিক শক্তি বাড়বে।</h4></li>
+                </ul>
+                <!-- <div class="list-group">
                     <a href="" class="list-group-item list-group-item-action list-group-item-primary">
-                        <h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; পুরুষের যৌন অক্ষমতা ভালো করবে।</h4>
+                        
                     </a>
                     <a href="" class="list-group-item list-group-item-action list-group-item-secondary">
-                        <h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; ঠিকমত শক্ত না হওয়া ভালো হবে।</h4>
+                        
                     </a>
                     <a href="" class="list-group-item list-group-item-action list-group-item-success">
-                        <h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; উত্তেজনা কম সমাধান করবে।</h4>
+                        
                     </a>
                     <a href="" class="list-group-item list-group-item-action list-group-item-danger">
-                        <h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; যৌন আকাঙ্ক্ষা জাগাবে।</h4>
+                        
                     </a>
                     <a href="" class="list-group-item list-group-item-action list-group-item-warning">
-                        <h4><i class="fa-regular fa-hand-point-right"></i> &nbsp; লিঙ্গ উত্থিত না হওয়ার সমস্যা সমাধান করবে।</h4>
+                        <
                     </a>
                     </a>
                     <a href="" class="list-group-item list-group-item-action list-group-item-warning">
-                        <h4><i class="fa-regular fa-hand-point-right"></i> &nbsp; শারীরিক শক্তি বাড়বে।</h4>
+                        
                     </a>
-                </div>
+                </div> -->
             </div>
             <div class="col-2"></div>
         </div>
     </section>
-<!--     
-    <section class="container-fluid bg-success mb-3">
-        <div class="facilities container">
-            <header>
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-lg-8 col-md-12 col-sm-12">
-                        <h1 class="text-white text-center mt-3 border border-5 rounded-pill p-3">আমাদের মধুময় বাদাম ব্যবহারে আপনার</h1>
-                    </div>
-                    <div class="col-2"></div>
-                </div>
-            </header>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-lg-8 col-md-12 col-sm-12 p-5">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary"><h3>পুরুষের যৌন অক্ষমতা ভালো করবে।</h3></a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary"><h3>ঠিকমত শক্ত না হওয়া ভালো হবে।</h3></a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-success"><h3>উত্তেজনা কম সমাধান করবে।</h3></a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary"><h3>যৌন আকাঙ্ক্ষা জাগাবে</h3></a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary"><h3>লিঙ্গ উত্থিত না হওয়ার সমস্যা সমাধান করবে</h3></a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-success"><h3>শারীরিক শক্তি বাড়বে</h3></a>
-                    </div>
-                </div>
-                <div class="col-2"></div>
-            </div>
-        </div>
-    </section>
-    <section class="container d-flex justify-content-center mb-3">
-        <img class="img-fluid" src="./images/content-img.png" alt="">
-    </section> -->
-    <!-- facilities section end  -->
 
 <!-- benefit section started  -->
     <section class="container-fluid text-bg-success p-3 mb-5 pb-4">
@@ -148,23 +250,13 @@
             <div class="col-2"></div>
             <div class="col-lg-8 col-md-12 col-sm-12">
                 <h1 class="text-center text-white mt-3 p-2 border border-3 rounded-pill border-white mb-3">প্রতিদিন ২ চামচ মধুময় বাদাম আপনার যে উপকার করবে</h1>
-                <div class="list-group">
-                    <a href="" class="list-group-item list-group-item-action list-group-item-primary">
-                        <h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; হারানো শক্তি ফিরিয়ে আনে তেমনি দীর্ঘ সময় বিশে-ষ কাজের শক্তি বৃদ্ধি করে</h4>
-                    </a>
-                    <a href="" class="list-group-item list-group-item-action list-group-item-secondary">
-                        <h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; বিশেষ মুহুর্তে দুর্বল থাকলে খাওয়া শুরু করুন।</h4>
-                    </a>
-                    <a href="" class="list-group-item list-group-item-action list-group-item-success">
-                        <h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; এটি সকলের সাস্থের যেকোনো ঝুকিপূর্ণ সমস্যা দূর করার জন্য খুবই কার্যকরী একটি খাবার</h4>
-                    </a>
-                    <a href="" class="list-group-item list-group-item-action list-group-item-danger">
-                        <h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; যে রোগ থেকে ৮০% রোগ হয় , সেই গ্যাস্টিকের সমস্যা দূর করবে</h4>
-                    </a>
-                    <a href="" class="list-group-item list-group-item-action list-group-item-warning">
-                        <h4><i class="fa-regular fa-hand-point-right"></i> &nbsp; কাজে মনযোগ বাড়ায়, ক্লান্তি দূর করে সারাদিনের কাজের এনার্জি দিবে</h4>
-                    </a>
-                </div>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning"><h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; হারানো শক্তি ফিরিয়ে আনে তেমনি দীর্ঘ সময় বিশে-ষ কাজের শক্তি বৃদ্ধি করে</h4></li>
+                    <li class="list-group-item list-group-item-primary"><h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; বিশেষ মুহুর্তে দুর্বল থাকলে খাওয়া শুরু করুন।</h4></li>
+                    <li class="list-group-item list-group-item-secondary"><h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; এটি সকলের সাস্থের যেকোনো ঝুকিপূর্ণ সমস্যা দূর করার জন্য খুবই কার্যকরী একটি খাবার</h4></li>
+                    <li class="list-group-item list-group-item-success"><h4><i class="fa-regular fa-hand-point-right"></i>&nbsp; যে রোগ থেকে ৮০% রোগ হয় , সেই গ্যাস্টিকের সমস্যা দূর করবে</h4></li>
+                    <li class="list-group-item list-group-item-danger"><h4><i class="fa-regular fa-hand-point-right"></i> &nbsp; কাজে মনযোগ বাড়ায়, ক্লান্তি দূর করে সারাদিনের কাজের এনার্জি দিবে</h4></li>
+                </ul>
             </div>
             <div class="col-2"></div>
         </div>
@@ -175,25 +267,33 @@
     <section class="container-fluid bg-secondary mb-3">
         <div class="row">
             <div class="col-2"></div>
-            <div class="col-lg-8 col-md-12 col-sm-12 text-center p-3">
-                <h1 class="border rounded p-3 border-3 border-white text-white">দারুস সুন্নাহ্ থেকে কেন কিনবেন​</h1>
-                <div class="list-group">
+            <div class="col-lg-8 col-md-12 col-sm-12 p-3">
+                <h1 class="border rounded p-3 border-3 border-white text-white text-center">কেন আমাদের কাছ থেকে কিনবেন ?</h1>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning"><h4><i class="fa-regular fa-hand-point-right text-start"></i>&nbsp; ফ্রি হোম ডেলিভারি সুবিধা।</h4></li>
+
+                    <li class="list-group-item list-group-item-primary"><h4><i class="fa-regular fa-hand-point-right text-start"></i>&nbsp; ফ্রি হেলথ টিপস।</h4></li>
+                    <li class="list-group-item list-group-item-secondary"><h4><i class="fa-regular fa-hand-point-right text-start"></i>&nbsp; প্রোডাক্ট হাতে পেয়ে কোয়ালিটি যাচাই করে পেমেন্ট করার সুবিধা।</h4></li>
+                    <li class="list-group-item list-group-item-success"><h4><i class="fa-regular fa-hand-point-right text-start"></i>&nbsp; ১০০% অরিজিনাল মধু নকল প্রমান করতে পারেল ৫০০% ক্যাশব্যাক গ্যারান্টি।</h4></li>
+                    <li class="list-group-item list-group-item-danger"><h4><i class="fa-regular fa-hand-point-right text-start"></i> &nbsp; আমরা সুন্নত তরিকায় ব্যবসা করি তাই প্রতারিত হওয়ার ভয় নেই।</h4></li>
+                </ul>
+                <!-- <div class="list-group">
                         <a href="" class="list-group-item list-group-item-action list-group-item-primary text-start">
-                            <h4><i class="fa-regular fa-hand-point-right text-start"></i>&nbsp; ফ্রি হোম ডেলিভারি সুবিধা।</h4>
+                            
                         </a>
                         <a href="" class="list-group-item list-group-item-action list-group-item-secondary text-start">
-                            <h4><i class="fa-regular fa-hand-point-right text-start"></i>&nbsp; ফ্রি হেলথ টিপস।</h4>
+                            
                         </a>
                         <a href="" class="list-group-item list-group-item-action list-group-item-success text-start">
-                            <h4><i class="fa-regular fa-hand-point-right text-start"></i>&nbsp; প্রোডাক্ট হাতে পেয়ে কোয়ালিটি যাচাই করে পেমেন্ট করার সুবিধা।</h4>
+                            
                         </a>
                         <a href="" class="list-group-item list-group-item-action list-group-item-danger text-start">
-                            <h4><i class="fa-regular fa-hand-point-right text-start"></i>&nbsp; ১০০% অরিজিনাল মধু নকল প্রমান করতে পারেল ৫০০% ক্যাশব্যাক গ্যারান্টি।</h4>
+                            
                         </a>
                         <a href="" class="list-group-item list-group-item-action list-group-item-warning text-start">
-                            <h4><i class="fa-regular fa-hand-point-right text-start"></i> &nbsp; আমরা সুন্নত তরিকায় ব্যবসা করি তাই প্রতারিত হওয়ার ভয় নেই।</h4>
+                            
                         </a>
-                </div>
+                </div> -->
             </div>
             <div class="col-2"></div>
         </div>
@@ -204,15 +304,73 @@
     <section class="container">
         <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 text-white d-flex justify-content-center align-items-center ">
-                    <button class="border border-3 rounded border-white bg-danger">
-                    <h3>
-                        <a href="https://bastob.net/cart/directorder" class="p-5 text-white text-decoration-none">
-                                অর্ডর করতে এখানে ক্লিক করুন
+                
+                    <!-- modal start -->
+                <div class="col-lg-6 col-md-12 col-sm-12 text-white d-flex justify-content-center align-items-center ">
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalToggleLabel" style="color: black; text-align:center">অর্ডার করতে নিচের তথ্য গুলো প্রদান করুন</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                        <form class="row g-3 m-2">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <!-- <label for="inputAddress2" class="form-label" style="color: black;">Address</label> -->
+                                <input type="text" class="form-control" id="inputFullName" placeholder="আপনার নাম লিখুন...">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <!-- <label for="inputPassword4" class="form-label" style="color: black;">ফোন নাম্বার</label> -->
+                                <input type="number" class="form-control" id="inputPassword4" placeholder="আপনার ফোন নাম্বার দিন ">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                <!-- <label for="inputState" class="form-label">আপনার ডেলিভারী এলাকা সিলেক্ট করুন...</label> -->
+                                <select id="inputState" class="form-select required">
+                                <option selected>আপনার ডেলিভারী এলাকা সিলেক্ট করুন...</option>
+                                <option>ঢাকা সিটির মাঝে হোম ডেলিভারী - ৬০ টাকা</option>
+                                <option>ঢাকা সিটির বাইরে কুরিয়ার অফিস ডেলিভারী - ১২০ টাকা</option>
+                                <option>ঢাকা সিটির বাইরে হোম ডেলিভারী - ১৫০ টাকা</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
+                                <!-- <label for="inputAddress2" class="form-label" style="color: black;">Address</label> -->
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="যে ঠিকানায় ডেলিভারী পেতে চান সেই ঠিকানা লিখুন" required="required"> 
+                            </div>
+                            <!-- <fieldset class="row mb-3" aria-required="true">
+                                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label text-black" for="gridRadios1">
+                                            First radio
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <label class="form-check-label text-black" for="gridRadios2">
+                                            Second radio
+                                            </label>
+                                        </div>
+                                    </div>
+                            </fieldset> -->
+                        </form>
+                        
+                    <div class="modal-footer col-lg-12 col-md-12 col-sm-12">
+                        <a href="./thank-you.html">
+                            <button class="btn btn-primary col-lg-12 col-md-12 col-sm-12" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" type="submit">অর্ডার সাবমিট করতে এখানে ক্লিক করুন</button>
                         </a>
-                    </h3>
-                </button>                    
+                    </div>
+                    </div>
+                </div>
+                </div>
+                    <a class="btn btn-primary p-4" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><h3>অর্ডার করতে এখানে ক্লিক করুন</h3></a>
+                    
+                </div>
+
+                <!-- Modal End -->                   
             </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center ">
+            <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center mt-3">
                 <h3>মূল্য– ১ কেজি ১২০০ টাকা</h3>
                 <h2 class="text-danger">ডেলিভারি চার্জ ফ্রি</h2>
             </div>    
@@ -225,14 +383,14 @@
     <footer class="container-fluid bg-dark">
         <div class="row p-5">
             <div class="col-lg-4 col-md-12 col-sm-12 text-center">
-                <a class="text-decoration-none text-white" href="https://bastob.net/privacy-policy">Privacy Policy</a>
+                <a class="text-decoration-none text-white" href="./privacy.html">Privacy Policy</a>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 text-center">
-                <a class="text-decoration-none text-white" href="https://bastob.net/terms-and-condition">Terms & condition</a>
+                <a class="text-decoration-none text-white" href="./terms.html">Terms & condition</a>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 text-start">
                 <p class="text-white">
-                    © 2021 Darussunna. All Rights Reserved.
+                    © 2021 PranShop. All Rights Reserved.
                 </p>
             </div>
         </div>
