@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome To Darus Sunnah</title>
+    <title>Welcome To PranShop</title>
+    <link rel="icon" type="image/x-icon" href="/images/fav-icon.png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- fontaweosome kits  -->
     <script src="https://kit.fontawesome.com/29cfc7711b.js" crossorigin="anonymous"></script>
@@ -40,11 +42,15 @@
         .delivery{
             font-weight: 900;
         }
+        .review-img{
+            height: 30%;
+            width: 30%;
+        }
     </style>
   </head>
   <body>
     <!-- header started -->
-    <section class="container mb-3">
+    <!-- <section class="container mb-3">
         <header>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
@@ -52,7 +58,7 @@
                 </div>
             </div>
         </header>
-    </section>
+    </section> -->
     <!-- header end -->
 
     <!-- banner text started  -->
@@ -82,8 +88,9 @@
     <section class="container-fluid bg-dark mb-3">
         <div class="order-section container p-5">
             <div class="row d-flex">
-                <div class="col-lg-6 col-md-12 col-sm-12 text-white d-flex flex-column justify-content-center align-items-center mt-3">
-                    <h1>১ কেজি ১২০০ টাকা</h1> <br>
+                <div class="col-lg-6 col-md-12 col-sm-12 text-white d-flex flex-column justify-content-center align-items-center mt-3">                    
+                        <p style="font-size: 40px;">১ কেজি <span class="price">1200</span> টাকা</p>
+                    <!-- <button class="rounded p-3 btn-dark"><h1>১ কেজি ১২০০ টাকা</h1></button> <br> -->
                     <h2>ডেলিভারি চার্জ ফ্রি</h2> <br>
                 </div>
 
@@ -99,14 +106,14 @@
 
                         <form class="row g-3 m-2">
                             <div class="col-lg-12 col-md-12 col-sm-12">
-                                <label for="inputAddress2" class="form-label" style="color: black;">নামঃ </label>
-                                <input type="text" class="form-control" id="inputFullName" placeholder="আপনার নাম লিখুন...">
+                                <label for="inputAddress2" class="form-label" style="color: black;">আপনার নামটি লিখুনঃ </label>
+                                <input type="text" class="form-control" id="inputFullName" placeholder="আপনার নামটি লিখুন...">
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12">
-                                <label for="inputPassword4" class="form-label" style="color: black;">ফোন নাম্বারঃ </label>
-                                <input type="number" class="form-control" id="inputPassword4" placeholder="আপনার ফোন নাম্বার দিন ">
+                                <label for="inputPassword4" class="form-label" style="color: black;">আপনার মোবাইল নাম্বারটি দিনঃ  </label>
+                                <input type="number" class="form-control" id="inputPassword4" placeholder="আপনার মোবাইল নাম্বারটি দিন ">
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 ">
                                 <label for="inputState" class="form-label text-dark">আপনার ডেলিভারী এলাকা সিলেক্ট করুন...</label>
                                 <select id="inputState" class="form-select required">
                                 <option selected>আপনার ডেলিভারী এলাকা সিলেক্ট করুন...</option>
@@ -114,22 +121,24 @@
                                 <option>ঢাকা সিটির বাইরে কুরিয়ার অফিস ডেলিভারী - ১২০ টাকা</option>
                                 <option>ঢাকা সিটির বাইরে হোম ডেলিভারী - ১৫০ টাকা</option>
                                 </select>
-                            </div>
+                            </div> -->
                             <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
                                 <label for="inputAddress2" class="form-label" style="color: black;">ঠিকানাঃ </label>
                                 <input type="text" class="form-control" id="inputAddress2" placeholder="যে ঠিকানায় ডেলিভারী পেতে চান সেই ঠিকানা লিখুন" required="required"> 
                             </div>
                         </form>
                         
-                    <div class="modal-footer col-lg-12 col-md-12 col-sm-12">
+                    <div class="container modal-footer col-lg-12 col-md-12 col-sm-12 align-content-center">
                         <a href="./thank-you.html">
-                            <button class="btn btn-primary col-lg-12 col-md-12 col-sm-12" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" type="submit">অর্ডার সাবমিট করতে এখানে ক্লিক করুন</button>
+                            <button class="btn btn-primary col-lg-12 col-md-12 col-sm-12 align-items-center" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" type="submit">অর্ডার সাবমিট করতে এখানে ক্লিক করুন</button>
                         </a>
                     </div>
                     </div>
                 </div>
                 </div>
-                    <a class="btn btn-danger pt-4 pb-4 rounded-pill" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><h3>অর্ডার করতে ক্লিক করুন</h3></a>
+                <a class="text-decoration-none" data-bs-toggle="modal" href="#exampleModalToggle">
+                    <div class="shadow-lg p-3 mb-5 bg-danger rounded text-white"><h3><b>অর্ডার করতে ক্লিক করুন</b></h3></div>
+                </a>
                     
                 </div>
 
@@ -198,12 +207,109 @@
         </div>
     </section>
 <!-- why from us section end -->
-    <section class="container mb-5">
+
+<!-- new review section start  -->
+    <section class="container mb-5 mt-5">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+                <h1 class="text-center text-white mt-3 p-2 border border-3 rounded-pill border-white mb-3 text-bg-success">আমাদের সম্পর্কে আমাদের মূল্যবান কাস্টমারদের মন্তব্য</h1>
+            </div>
+            <div class="container overflow-hidden text-center">
+            <div class="row gy-3">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="p-3 border bg-light shadow-lg rounded-3 d-flex align-items-center">
+                    <img src="./images/ar.jpg" class="img-fluid img-thumbnail review-img rounded-4 me-1" alt="">
+                    <div class="block-quote">
+                        <blockquote class="blockquote">
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="p-3 border bg-light shadow-lg rounded-3 d-flex align-items-center">
+                    <img src="./images/ar.jpg" class="img-fluid img-thumbnail review-img rounded-4 me-1" alt="">
+                    <div class="block-quote">
+                        <blockquote class="blockquote">
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="p-3 border bg-light shadow-lg rounded-3 d-flex align-items-center">
+                    <img src="./images/ar.jpg" class="img-fluid img-thumbnail review-img rounded-4 me-1" alt="">
+                    <div class="block-quote">
+                        <blockquote class="blockquote">
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="p-3 border bg-light shadow-lg rounded-3 d-flex align-items-center">
+                    <img src="./images/ar.jpg" class="img-fluid img-thumbnail review-img rounded-4 me-1" alt="">
+                    <div class="block-quote">
+                        <blockquote class="blockquote">
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- new review section end  -->
+    
+        <!-- review section start  -->
+        <!-- <section class="container">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h1 class="text-center text-white mt-3 p-2 border border-3 rounded-pill border-white mb-3 text-bg-success">আমাদের সম্পর্কে আমাদের মূল্যবান কাস্টমারদের মন্তব্য</h1>
+            </div>
+            <div class="card-group mb-5">
+                <div class="card">
+                    <img src="./images/rm.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Md. Rubel Mahmud</h5>
+                    <h6 class="card-title">CEO & Founder of WebHub</h6>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/ar.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Amjad Rana</h5>
+                    <h6 class="card-title">Web Developer</h6>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/ra.jpg" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Shourov</h5>
+                    <h6 class="card-title">CSO & Co-Founder of WebHub</h6>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- review section end  -->
+ <section class="container mb-5">
         <div class="banner-img d-flex justify-content-center">
             <img class="img-fluid" src="./images/banner-img.png" alt="">
         </div>
     </section>
-
 <!-- end order section started -->
     <section class="container">
         <div class="row">
@@ -228,7 +334,7 @@
                                 <label for="inputPassword4" class="form-label" style="color: black;">ফোন নাম্বার ঃ</label>
                                 <input type="number" class="form-control" id="inputPassword4" placeholder="আপনার ফোন নাম্বার দিন ">
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 ">
                                 <label for="inputState" class="form-label">আপনার ডেলিভারী এলাকা সিলেক্ট করুন...</label>
                                 <select id="inputState" class="form-select required">
                                     <option selected>আপনার ডেলিভারী এলাকা সিলেক্ট করুন...</option>
@@ -236,7 +342,7 @@
                                     <option>ঢাকা সিটির বাইরে কুরিয়ার অফিস ডেলিভারী - ১২০ টাকা</option>
                                     <option>ঢাকা সিটির বাইরে হোম ডেলিভারী - ১৫০ টাকা</option>
                                 </select>
-                            </div>
+                            </div> -->
                             <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
                                 <label for="inputAddress2" class="form-label" style="color: black;">ঠিকানা</label>
                                 <input type="text" class="form-control" id="inputAddress2" placeholder="যে ঠিকানায় ডেলিভারী পেতে চান সেই ঠিকানা লিখুন" required="required"> 
@@ -258,73 +364,44 @@
                 <!-- Modal End -->                   
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center mt-3">
-                <h3>মূল্য– ১ কেজি ১২০০ টাকা</h3>
+                <p style="font-size: 40px;">১ কেজি <span class="price">1200</span> টাকা</p>
                 <h2 class="text-danger">ডেলিভারি চার্জ ফ্রি</h2>
-                <a class="btn btn-danger p-4 mb-4 rounded-pill" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><h3><b>অর্ডার করতে ক্লিক করুন</b></h3></a>
+                <!-- <a href="" class="text-decoration-none">
+                    <div class="shadow-lg p-3 mb-5 bg-danger rounded text-white"><h3><b>অর্ডার করতে ক্লিক করুন</b></h3></div>
+                </a> -->
+                <a class="text-decoration-none" data-bs-toggle="modal" href="#exampleModalToggle">
+                    <div class="shadow-lg p-3 mb-5 bg-danger rounded text-white"><h3><b>অর্ডার করতে ক্লিক করুন</b></h3></div>
+                </a>
             </div>    
                 
     </div>
     </section>
 <!-- end order section end -->
 
-        <!-- review section start  -->
-        <section class="container">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <h1 class="text-center text-white mt-3 p-2 border border-3 rounded-pill border-white mb-3 text-bg-success">আমাদের সম্পর্কে আমাদের মূল্যবান কাস্টমারদের মন্তব্য</h1>
-            </div>
-            <div class="card-group mb-5">
-                <div class="card">
-                    <img src="./images/rm.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Md. Rubel Mahmud</h5>
-                    <h6 class="card-title">CEO & Founder of WebHub</h6>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <!-- <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                    </div> -->
-                </div>
-                <div class="card">
-                    <img src="./images/ar.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Amjad Rana</h5>
-                    <h6 class="card-title">Web Developer</h6>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                    <!-- <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                    </div> -->
-                </div>
-                <div class="card">
-                    <img src="./images/ra.jpg" class="card-img-top img-fluid w-100" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Shourov</h5>
-                    <h6 class="card-title">CSO & Co-Founder of WebHub</h6>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                    <!-- <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-        <!-- review section end  -->
 
     <!-- footer section started -->
     <footer class="container-fluid bg-dark">
         <div class="row p-5">
-            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
-                <a class="text-decoration-none text-white" href="./privacy.html">Privacy Policy</a>
+            <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                <h3 class="text-white"><u>Contact Details</u></h3> <br>
+                <h4 class="text-white"><i class="fa-solid fa-location-dot text-white"></i> &nbsp; Shop-802, Lift-7, Nahar Plaza Market.</h4> <br>
+                <h4 class="text-white"><i class="fa-solid fa-phone text-white"></i> &nbsp; +8801997700748, +8801997700749</h4> <br>
+                <h4 class="text-white"><i class="fa-solid fa-envelope text-white"></i> &nbsp; info@pranshop.com</h4> <br>
+                
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
-                <a class="text-decoration-none text-white" href="./terms.html">Terms & condition</a>
+            <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                <h3 class="text-white"><u>Important Links</u></h3> <br>
+                <a class="text-decoration-none text-white" href="./privacy.html"><h4><i class="fa-solid fa-link text-white"></i> &nbsp; Privacy Policy</h4></a> <br>
+                <a class="text-decoration-none text-white" href="./terms.html"><h4><i class="fa-solid fa-link text-white"></i> &nbsp; Terms & condition</h4></a> <br>
+                
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 text-start">
-                <p class="text-white">
-                    © 2021 PranShop. All Rights Reserved.
+            
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 text-start pb-5">
+                <p class="text-white text-center">
+                    © 2022 PranShop - All Rights Reserved.
                 </p>
             </div>
-        </div>
     </footer>
     <!-- footer section end -->
 
